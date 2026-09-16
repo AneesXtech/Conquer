@@ -520,8 +520,8 @@
     }
 
     /* Mobile Menu Button */
-    .btn-area-menu,
-    .btn-area-menu:hover {
+    .btn-area-menu {
+      display: none;
       border-radius: 6px;
       padding: 9px 20px;
       background: #fd591e;
@@ -535,6 +535,12 @@
       box-shadow: 0 4px 14px rgba(253, 89, 30, 0.35);
       cursor: pointer;
       transition: all var(--transition-popular);
+    }
+
+    .btn-area-menu:hover {
+      background: #fd591e;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(253, 89, 30, 0.35);
     }
 
     .btn-area-menu:active {
