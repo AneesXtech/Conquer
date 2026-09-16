@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.vscode/
+.idea/
+extract.ps1
+build_index.ps1
