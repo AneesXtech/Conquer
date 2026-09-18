@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Contact Conquer — Let’s Connect & Conquer Together</title>
+  <meta name="title" content="Contact Conquer — Let’s Connect & Conquer Together">
+  <meta name="description"
+    content="Have an idea, a problem to solve, or an opportunity to work together? Get in touch with Conquer. Send us a message or explore partnership opportunities.">
+  <meta name="keywords"
+    content="contact conquer, conquer email, work with conquer, conquer partnerships, become a partner, conquer studio">
+  <meta name="author" content="Conquer">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#050508">
+  <link rel="canonical" href="https://conquer-three.vercel.app/contact.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://conquer-three.vercel.app/contact.html">
+  <meta property="og:title" content="Contact Conquer — Let’s Connect & Conquer Together">
+  <meta property="og:description"
+    content="Have an idea, a problem to solve, or an opportunity to work together? We would love to hear from you.">
+  <meta property="og:image" content="https://conquer-three.vercel.app/images/og-contact.jpg">
+  <meta property="og:image:secure_url" content="https://conquer-three.vercel.app/images/og-contact.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Conquer">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://conquer-three.vercel.app/contact.html">
+  <meta name="twitter:title" content="Contact Conquer — Let’s Connect & Conquer Together">
+  <meta name="twitter:description"
+    content="Reach out to explore a partnership, ask about products, or share an idea you want to bring to life.">
+  <meta name="twitter:image" content="https://conquer-three.vercel.app/images/og-contact.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data for Enhanced SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://conquer-three.vercel.app/#organization",
+        "name": "Conquer",
+        "url": "https://conquer-three.vercel.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://conquer-three.vercel.app/images/logo.png"
+        },
+        "description": "Family-run innovation and invention studio creating practical, smart and efficient solutions for everyday challenges.",
+        "email": "hello@conquer.com",
+        "telephone": "+61 2 9250 8000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Level 24, 100 Barangaroo Avenue",
+          "addressLocality": "Sydney",
+          "addressRegion": "NSW",
+          "postalCode": "2000",
+          "addressCountry": "AU"
+        },
+        "sameAs": [
+          "https://facebook.com",
+          "https://instagram.com",
+          "https://linkedin.com"
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://conquer-three.vercel.app/contact.html#webpage",
+        "url": "https://conquer-three.vercel.app/contact.html",
+        "name": "Contact Conquer — Let’s Connect & Conquer Together",
+        "description": "Have an idea, a problem to solve, or an opportunity to work together? Send us a message or get directions.",
+        "isPartOf": {
+          "@id": "https://conquer-three.vercel.app/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://conquer-three.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact Us",
+              "item": "https://conquer-three.vercel.app/contact.html"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Production Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ==========================================================================
+       CONQUER CONTACT PAGE (OBSIDIAN DARK THEME & PREMIUM STYLES)
+       ========================================================================== */
+    body {
+      background-color: #050508;
+      color: #ffffff;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      margin: 0;
+      padding: 0;
+      overflow-x: clip !important;
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+    }
+
+    /* Ambient Dark Aura Glows */
+    .contact-ambient-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      z-index: 0;
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .contact-ambient-glow {
+        display: none !important;
+      }
+    }
+
+    .glow-top-left {
+      top: 100px;
+      left: -120px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.22) 0%, rgba(255, 90, 31, 0.05) 55%, transparent 75%);
+    }
+
+    .glow-mid-right {
+      top: 750px;
+      right: -140px;
+      width: 580px;
+      height: 580px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.18) 0%, rgba(255, 90, 31, 0.04) 60%, transparent 75%);
+    }
+
+    .glow-bottom-left {
+      bottom: 200px;
+      left: -100px;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.16) 0%, transparent 70%);
+    }
+
+    /* --------------------------------------------------------------------------
+       HERO SECTION (MATCHING ABOUT US AESTHETICS)
+       -------------------------------------------------------------------------- */
+    .contact-hero-section {
+      width: 100%;
+      min-height: 480px;
+      padding: 200px 24px 120px 24px;
+      background: #050508;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .contact-hero-dot {
+      position: absolute;
+      top: 32px;
+      left: 36px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #ff5a1f;
+      box-shadow: 0 0 12px #ff5a1f, 0 0 24px rgba(255, 90, 31, 0.55);
+      z-index: 3;
+    }
+
+    .contact-hero-grid {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 36px 36px;
+      background-position: center center;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .contact-hero-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 920px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .contact-hero-title {
+      font-family: var(--font-display, 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif);
+      font-size: clamp(3rem, 5.8vw, 4.8rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #ffffff;
+      margin: 0 0 20px 0;
+      line-height: 1.08;
+      text-transform: uppercase !important;
+    }
+
+    .title-gradient-orange {
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff7036 50%, #ff8c42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .contact-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
+      font-size: 14px;
+      font-weight: 500;
+      color: #9fa0b5;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      padding: 8px 24px;
+      backdrop-filter: blur(8px);
+    }
+
+    .crumb-link {
+      color: #9fa0b5;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .crumb-link:hover {
+      color: #ffffff;
+    }
+
+    .crumb-sep {
+      color: #65667a;
+      margin: 0 10px;
+      font-weight: 400;
+    }
+
+    .crumb-current {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* --------------------------------------------------------------------------
+       SIGNATURE SUBTITLE BRACKET TAG [ ... ]
+       -------------------------------------------------------------------------- */
+    .section-eyebrow-tag {
+      display: inline-block;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase !important;
+      color: #ff5a1f !important;
+      margin-bottom: 16px;
+    }
+
+    /* --------------------------------------------------------------------------
+       REFERENCE-MATCHING CONTACT SECTION (TWO-COLUMN ASYMMETRIC GRID)
+       -------------------------------------------------------------------------- */
+    .contact-main-section {
+      padding: 100px 0 120px 0;
+      position: relative;
+      background: #050508;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .contact-reference-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.18fr;
+      gap: 65px;
+      align-items: start;
+    }
+
+    /* Left Column: Direct Headline, Address, Link & Clean Google Map */
+    .ref-contact-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ref-contact-eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      color: #ff5a1f;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .ref-contact-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.4rem, 3.8vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin: 0 0 24px 0;
+    }
+
+    .ref-contact-lead {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #9fa0b5;
+      margin: 0 0 28px 0;
+    }
+
+    .ref-address-block {
+      margin-bottom: 24px;
+    }
+
+    .ref-contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .ref-info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .ref-simple-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(255, 90, 31, 0.1);
+      border: 1px solid rgba(255, 90, 31, 0.25);
+      color: #ff5a1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.25s ease;
+    }
+
+    .ref-info-row:hover .ref-simple-icon {
+      background: #ff5a1f;
+      color: #ffffff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 14px rgba(255, 90, 31, 0.35);
+    }
+
+    .ref-info-content {
+      flex: 1;
+    }
+
+    .ref-info-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ff5a1f;
+      margin-bottom: 4px;
+    }
+
+    .ref-info-text {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #e2e8f0;
+    }
+
+    .ref-info-text a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .ref-info-text a:hover {
+      color: #ff5a1f;
+    }
+
+    .ref-directions-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #ff5a1f;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      margin-top: 4px;
+      margin-bottom: 24px;
+    }
+
+    .ref-directions-link:hover {
+      color: #ff8c42;
+      transform: translateX(4px);
+    }
+
+    /* Embedded Google Map (matching screenshot cleanly under Get directions) */
+    .ref-map-container {
+      width: 100%;
+      height: 330px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #0d0e17;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .ref-map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      filter: invert(90%) hue-rotate(180deg) contrast(95%) brightness(90%);
+    }
+
+    /* Right Column: Sleek Elevated Form Card */
+    .ref-form-card {
+      background: #141414;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 26px;
+      padding: 46px 42px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 90, 31, 0.05);
+      position: relative;
+    }
+
+    .ref-form-card-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin: 0 0 12px 0;
+    }
+
+    .ref-form-card-sub {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #9fa0b5;
+      margin: 0 0 28px 0;
+    }
+
+    .ref-form-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ref-row-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .ref-field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .ref-field-label {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .ref-field-label .required-star {
+      color: #ff5a1f;
+      margin-left: 2px;
+    }
+
+    .ref-input,
+    .ref-select,
+    .ref-textarea {
+      width: 100%;
+      background: #000000;
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 13px 16px;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 14.5px;
+      color: #ffffff;
+      outline: none;
+      transition: all 0.25s ease;
+      box-sizing: border-box;
+    }
+
+    .ref-input::placeholder,
+    .ref-textarea::placeholder {
+      color: #65667a;
+    }
+
+    .ref-input:focus,
+    .ref-select:focus,
+    .ref-textarea:focus {
+      border-color: #ff5a1f;
+      background: #18192b;
+      box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.18);
+    }
+
+    .ref-select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ff5a1f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 42px;
+    }
+
+    .ref-select option {
+      background-color: #0c0d16;
+      color: #ffffff;
+      padding: 8px;
+    }
+
+    .ref-textarea {
+      min-height: 110px;
+      resize: vertical;
+      line-height: 1.6;
+    }
+
+
+    /* Form Alerts */
+    .form-alert-box {
+      display: none;
+      padding: 16px 20px;
+      border-radius: 14px;
+      font-size: 14.5px;
+      margin-top: 18px;
+      line-height: 1.6;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .form-alert-success {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #4ade80;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       GOOEY BLOB BUTTON (EXACT CONQUER BRAND ANIMATION)
+       -------------------------------------------------------------------------- */
+    .blob-btn {
+      z-index: 1;
+      position: relative;
+      padding: 16px 42px;
+      text-align: center;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      background-color: #ff5a1f !important;
+      outline: none;
+      border: none;
+      transition: color 0.4s ease, background-color 0.4s ease;
+      cursor: pointer;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      box-shadow: none !important;
+    }
+
+    .blob-btn:before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #ff5a1f;
+      border-radius: 9999px;
+      pointer-events: none;
+      transition: border-color 0.35s ease;
+    }
+
+    .blob-btn:after {
+      content: "";
+      z-index: -2;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+    }
+
+    .blob-btn:hover {
+      color: #000000 !important;
+      background-color: #ffffff !important;
+      box-shadow: none !important;
+    }
+
+    .blob-btn:hover:before {
+      border-color: #ffffff;
+    }
+
+    .blob-btn__inner {
+      z-index: -1;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+      background: #ff5a1f;
+    }
+
+    .blob-btn__blobs {
+      position: relative;
+      display: block;
+      height: 100%;
+      filter: url('#goo');
+    }
+
+    .blob-btn__blob {
+      position: absolute;
+      top: 2px;
+      width: 25%;
+      height: 100%;
+      background: #ffffff;
+      border-radius: 100%;
+      transform: translate3d(0, 150%, 0) scale(1.7);
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @supports (filter: url('#goo')) {
+      .blob-btn__blob {
+        transform: translate3d(0, 150%, 0) scale(1.4);
+      }
+    }
+
+    .blob-btn__blob:nth-child(1) {
+      left: 0%;
+      transition-delay: 0s;
+    }
+
+    .blob-btn__blob:nth-child(2) {
+      left: 28%;
+      transition-delay: 0.08s;
+    }
+
+    .blob-btn__blob:nth-child(3) {
+      left: 56%;
+      transition-delay: 0.16s;
+    }
+
+    .blob-btn__blob:nth-child(4) {
+      left: 84%;
+      transition-delay: 0.24s;
+    }
+
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.7);
+    }
+
+    @supports (filter: url('#goo')) {
+      .blob-btn:hover .blob-btn__blob {
+        transform: translateZ(0) scale(1.4);
+      }
+    }
+
+    .blob-btn .btn-arrow-icon {
+      position: relative;
+      z-index: 2;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      color: inherit;
+    }
+
+    .blob-btn:hover .btn-arrow-icon {
+      transform: translateX(4px);
+    }
+
+    /* --------------------------------------------------------------------------
+       BOTTOM SECTION: WORK WITH CONQUER (PARTNERSHIP STRIP)
+       -------------------------------------------------------------------------- */
+    .contact-work-section {
+      padding: 95px 0 105px 0;
+      position: relative;
+      background: #050508;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .work-conquer-card {
+      position: relative;
+      background: radial-gradient(circle at 50% 20%, rgba(255, 90, 31, 0.14) 0%, rgba(12, 13, 20, 0.98) 65%);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 28px;
+      padding: 68px 48px;
+      text-align: center;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 45px rgba(255, 90, 31, 0.1);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .work-card-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .work-conquer-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #ffffff;
+      margin: 0 0 18px 0;
+      text-transform: uppercase !important;
+    }
+
+    .work-conquer-desc {
+      font-size: 16.5px;
+      line-height: 1.75;
+      color: #9fa0b5;
+      margin: 0 auto 34px auto;
+      max-width: 620px;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE SYSTEM (TABLET & MOBILE BREAKPOINTS)
+       ========================================================================== */
+    @media (max-width: 991px) {
+      .contact-hero-section {
+        min-height: 420px;
+        padding: 160px 20px 90px 20px;
+      }
+
+      .contact-reference-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .ref-form-card {
+        padding: 40px 30px;
+      }
+
+      .work-conquer-card {
+        padding: 50px 28px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .contact-hero-section {
+        min-height: 360px;
+        padding: 140px 16px 70px 16px;
+      }
+
+      .contact-hero-dot {
+        top: 20px;
+        left: 20px;
+      }
+
+      .contact-main-section,
+      .contact-work-section {
+        padding: 65px 0 75px 0;
+      }
+
+      .ref-row-2col {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .ref-form-card {
+        padding: 32px 20px;
+        border-radius: 20px;
+      }
+
+      .ref-submit-btn-row .blob-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: inline-flex !important;
+        justify-content: center;
+        padding: 13px 32px !important;
+        margin-inline: auto !important;
+      }
+
+      .ref-map-container {
+        height: 280px;
+      }
+
+      .work-conquer-card {
+        padding: 42px 20px;
+        border-radius: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-hero-section {
+        min-height: 320px;
+        padding: 125px 12px 60px 12px;
+      }
+
+      .ref-contact-title {
+        font-size: 2.1rem;
+      }
+
+      .ref-map-container {
+        height: 250px;
+      }
+
+      .red-newsletter-form {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 8px;
+      }
+
+      .red-newsletter-input {
+        width: 100%;
+      }
+
+      .red-newsletter-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: inline-flex !important;
+        padding: 12px 24px;
+        margin-inline: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Ambient Dark Gradients -->
+  <div class="contact-ambient-glow glow-top-left"></div>
+  <div class="contact-ambient-glow glow-mid-right"></div>
+  <div class="contact-ambient-glow glow-bottom-left"></div>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR (FROSTED OBSIDIAN GLASS)
+       ======================================================================== -->
+  <header class="header-area" id="header">
+    <div class="header-area-inner">
+      <div class="brand-area-wrap">
+        <a href="index.html" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="images/logo.png" alt="Conquer Logo" style="height: 52px; width: auto; display: block;">
+        </a>
+      </div>
+
+      <nav class="nav-area">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Conquer</a>
+        <a href="products.html">Products &amp; Services</a>
+        <a href="approach.html">Our Approach</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="header-area-actions">
+        <a href="contact.html" class="btn-area-orange">
+          <span>Let's talk</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <button class="btn-area-menu" id="mobile-toggle-btn" aria-label="Toggle navigation menu">
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Conquer</a>
+      <a href="products.html" class="mobile-nav-link">Products &amp; Services</a>
+      <a href="approach.html" class="mobile-nav-link">Our Approach</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+      <div style="margin-top: 15px;">
+        <a href="contact.html" class="btn-area-orange"
+          style="justify-content: center; width: 100%; border-radius: 9999px;">
+          <span>Let's talk</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========================================================================
+         HERO: CONTACT CONQUER (MATCHING ABOUT US FORMAT WITH GRID OVERLAY)
+         ======================================================================== -->
+    <section class="contact-hero-section">
+      <!-- Corner Indicator Dot -->
+      <span class="contact-hero-dot" aria-hidden="true"></span>
+
+      <!-- Tech Grid Pattern Overlay -->
+      <div class="contact-hero-grid" aria-hidden="true"></div>
+
+      <div class="contact-hero-inner">
+        <h1 class="contact-hero-title">
+          Contact <span class="title-gradient-orange">Conquer</span>
+        </h1>
+        <nav class="contact-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" class="crumb-link">Home</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current">Contact Us</span>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         MAIN CONTACT & FORM SECTION (REFERENCE-MATCHING 2-COLUMN ASYMMETRIC GRID)
+         ======================================================================== -->
+    <section class="contact-main-section" id="contact-details">
+      <div class="container">
+
+        <div class="contact-reference-layout">
+
+          <!-- Left Column: Direct Headline, Address, Link & Clean Google Map -->
+          <div class="ref-contact-left">
+            <span class="ref-contact-eyebrow">[ CONTACT CONQUER ]</span>
+            <h2 class="ref-contact-title">Rooted in Innovation, growing nationally.</h2>
+            <p class="ref-contact-lead">
+              Have an idea, a problem to solve, or an opportunity to work together? We would love to hear from you.
+              Let’s connect and conquer together.
+            </p>
+
+            <div class="ref-address-block">
+              <div class="ref-contact-info-list">
+
+                <!-- Address with Simple Icon -->
+                <div class="ref-info-row">
+                  <span class="ref-simple-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <div class="ref-info-content">
+                    <div class="ref-info-title">Address</div>
+                    <div class="ref-info-text">
+                      Level 24, 100 Barangaroo Avenue<br>
+                      Barangaroo, Sydney NSW 2000, Australia
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone with Simple Icon -->
+                <div class="ref-info-row">
+                  <span class="ref-simple-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                      </path>
+                    </svg>
+                  </span>
+                  <div class="ref-info-content">
+                    <div class="ref-info-title">Phone</div>
+                    <div class="ref-info-text">
+                      <a href="tel:+61292508000">+61 2 9250 8000</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email with Simple Icon -->
+                <div class="ref-info-row">
+                  <span class="ref-simple-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                  </span>
+                  <div class="ref-info-content">
+                    <div class="ref-info-title">Email</div>
+                    <div class="ref-info-text">
+                      <a href="mailto:hello@conquer.com">hello@conquer.com</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Community & Charity Support -->
+                <div class="ref-info-row">
+                  <span class="ref-simple-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                    </svg>
+                  </span>
+                  <div class="ref-info-content">
+                    <div class="ref-info-title">Community &amp; Charity</div>
+                    <div class="ref-info-text">
+                      We also support our local community and other charity projects — including Schools and grassroots initiatives.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="https://maps.google.com/?q=100+Barangaroo+Avenue+Sydney+NSW+2000+Australia" target="_blank"
+                rel="noopener" class="ref-directions-link">
+                <span>Get directions</span>
+                <span style="font-size: 17px; line-height: 1;">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Embedded Google Map (Sydney, Australia) directly below Get directions -->
+            <div class="ref-map-container">
+              <iframe title="Conquer Sydney Headquarters Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.8770425666795!2d151.20015507663435!3d-33.8647039732283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae43ce4e0d79%3A0xb35a75d5e23630f7!2s100%20Barangaroo%20Ave%2C%20Barangaroo%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sau!4v1710000000000!5m2!1sen!2sau"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Conquer Sydney Studio Location Google Map">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Elevated Contact Us Form Card -->
+          <div class="ref-form-card">
+            <h3 class="ref-form-card-title">Contact Us</h3>
+            <p class="ref-form-card-sub">
+              If you’re facing a specific business challenge you’d like to discuss, connect with a consultant to let us
+              know how we can help. To stay informed on industry trends and emerging solutions, sign up for our email
+              updates.
+            </p>
+
+            <form id="contact-page-form" onsubmit="handleContactPageSubmit(event)">
+              <div class="ref-form-fields">
+
+                <!-- Row 1: First Name & Last Name -->
+                <div class="ref-row-2col">
+                  <div class="ref-field-group">
+                    <label for="first-name" class="ref-field-label">First Name<span
+                        class="required-star">*</span></label>
+                    <input type="text" id="first-name" name="firstName" class="ref-input" required>
+                  </div>
+                  <div class="ref-field-group">
+                    <label for="last-name" class="ref-field-label">Last Name<span class="required-star">*</span></label>
+                    <input type="text" id="last-name" name="lastName" class="ref-input" required>
+                  </div>
+                </div>
+
+                <!-- Row 2: Work Email Address & Company Name -->
+                <div class="ref-row-2col">
+                  <div class="ref-field-group">
+                    <label for="email-address" class="ref-field-label">Work Email Address<span
+                        class="required-star">*</span></label>
+                    <input type="email" id="email-address" name="email" class="ref-input" required>
+                  </div>
+                  <div class="ref-field-group">
+                    <label for="company-name" class="ref-field-label">Company Name<span
+                        class="required-star">*</span></label>
+                    <input type="text" id="company-name" name="company" class="ref-input" required>
+                  </div>
+                </div>
+
+                <!-- Row 3: How can we help? -->
+                <div class="ref-field-group">
+                  <label for="help-topic" class="ref-field-label">How can we help?<span
+                      class="required-star">*</span></label>
+                  <select id="help-topic" name="topic" class="ref-select" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="Product / App Enquiry">Product / App Enquiry</option>
+                    <option value="Partnership Opportunity">Partnership Opportunity</option>
+                    <option value="Business Collaboration">Business Collaboration</option>
+                    <option value="Community / Charity">Community / Charity</option>
+                    <option value="Share an Idea">Share an Idea</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Row 4: Industry -->
+                <div class="ref-field-group">
+                  <label for="industry-select" class="ref-field-label">Industry<span
+                      class="required-star">*</span></label>
+                  <select id="industry-select" name="industry" class="ref-select" required>
+                    <option value="" disabled selected>Select an option that most closely aligns with your industry.
+                    </option>
+                    <option value="Technology & Software">Technology &amp; Software</option>
+                    <option value="Healthcare & Medical Devices">Healthcare &amp; Medical Devices</option>
+                    <option value="Consumer Products & Hardware">Consumer Products &amp; Hardware</option>
+                    <option value="Manufacturing & Industrial">Manufacturing &amp; Industrial</option>
+                    <option value="Retail & E-Commerce">Retail &amp; E-Commerce</option>
+                    <option value="Community & Education">Community &amp; Education</option>
+                    <option value="Other Industry">Other Industry</option>
+                  </select>
+                </div>
+
+                <!-- Row 5: Message -->
+                <div class="ref-field-group">
+                  <label for="contact-message" class="ref-field-label">Message<span
+                      class="required-star">*</span></label>
+                  <textarea id="contact-message" name="message" class="ref-textarea"
+                    placeholder="Tell us a little about what you would like to discuss." required></textarea>
+                </div>
+
+                <!-- Row 6: Submit Button (reCAPTCHA removed) -->
+                <div class="ref-submit-btn-row">
+                  <button type="submit" id="contact-form-btn" class="blob-btn">
+                    <span>Submit</span>
+                    <span class="btn-arrow-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </span>
+                    <span class="blob-btn__inner">
+                      <span class="blob-btn__blobs">
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                      </span>
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Form Success Message Box -->
+              <div id="form-success-box" class="form-alert-box form-alert-success">
+                <strong>&check; Message Sent Successfully!</strong> Thank you for reaching out to Conquer. A member of
+                our team will review your inquiry and connect with you shortly.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         BOTTOM SECTION: WORK WITH CONQUER
+         ======================================================================== -->
+    <section class="contact-work-section" id="work-with-conquer">
+      <div class="container">
+        <div class="work-conquer-card">
+          <div class="work-card-content">
+            <span class="section-eyebrow-tag">[ OUR PARTNERS ]</span>
+            <h2 class="work-conquer-title">Our Partners</h2>
+            <p class="work-conquer-desc">
+              Email us at <a href="mailto:hello@conquer.com" style="color: #ff5a1f; text-decoration: underline; font-weight: 600;">hello@conquer.com</a> if you want to hear more about us or share a common goal by becoming a Conquer partner.
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 34px;">
+              <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 26px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 10px;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #ff5a1f;"></span>
+                <span style="color: #ffffff; font-weight: 600; font-size: 14px;">Banking</span>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 26px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 10px;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #ff5a1f;"></span>
+                <span style="color: #ffffff; font-weight: 600; font-size: 14px;">Technical</span>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 26px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 10px;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #ff5a1f;"></span>
+                <span style="color: #ffffff; font-weight: 600; font-size: 14px;">Legal</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="mailto:hello@conquer.com?subject=Become%20a%20Conquer%20Partner" class="blob-btn">
+                <span>Become a Conquer Partner</span>
+                <span class="btn-arrow-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global SVG Gooey Filter for Blob Button Animations -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+      style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+          <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+
+  </main>
+
+  <!-- =========================================================
+       11. SIGNATURE RED GRADIENT NEWSLETTER STRIP (HOME PAGE MATCH)
+  ========================================================= -->
+  <section class="red-newsletter-strip" id="contact">
+    <div class="container red-newsletter-inner">
+      <div class="red-newsletter-title">
+        Sign up for email updates
+      </div>
+      <form class="red-newsletter-form"
+        onsubmit="event.preventDefault(); alert('Thank you for subscribing to CONQUER email updates!');">
+        <input type="email" class="red-newsletter-input" placeholder="Enter your email" required>
+        <button type="submit" class="red-newsletter-btn">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       12. ENTERPRISE FOOTER (HOME PAGE EXACT MATCH)
+  ========================================================= -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-logo-wrap">
+        <a href="#top" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="images/logo.png" alt="Conquer Solutions" class="footer-logo-img"
+            style="width: auto; display: block;">
+        </a>
+        <div class="footer-logo-sub" style="margin-top: 12px;">
+          RESEARCH • PROGRESS • HOPE • INNOVATION STUDIO
+        </div>
+      </div>
+
+      <!-- Horizontal Menu Links & Real SVG Social Icons Row -->
+      <div class="footer-middle-row">
+
+        <div class="footer-nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Conquer</a>
+          <a href="products.html">Products &amp; Services</a>
+          <a href="approach.html">Our Approach</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- REAL HIGH-RESOLUTION SVG SOCIAL MEDIA ICONS -->
+        <div class="footer-social-icons">
+
+          <!-- Facebook SVG -->
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-icon" title="Facebook"
+            aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+
+          <!-- Instagram SVG -->
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-icon" title="Instagram"
+            aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn SVG -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-icon" title="LinkedIn"
+            aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.239-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal Links -->
+      <div class="footer-bottom-row">
+        <div>CONQUER. All rights reserved.</div>
+
+        <div class="footer-legal-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Your Privacy Choices</a>
+          <a href="#top" class="footer-back-to-top-link"
+            onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+            <span>Back to top</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    function handleContactPageSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contact-page-form');
+      const submitBtn = document.getElementById('contact-form-btn');
+      const successBox = document.getElementById('form-success-box');
+
+      // Subtle loading state
+      submitBtn.style.pointerEvents = 'none';
+      submitBtn.style.opacity = '0.8';
+
+      setTimeout(function () {
+        successBox.style.display = 'block';
+        submitBtn.style.pointerEvents = 'auto';
+        submitBtn.style.opacity = '1';
+        form.reset();
+
+        // Auto-scroll slightly down to see confirmation
+        successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 600);
+    }
+  </script>
+</body>
+
+</html>

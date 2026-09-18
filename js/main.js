@@ -1,3 +1,17 @@
+    // 0. Dynamic Header Scroll Controller (Transparent at top -> Black floating card with radius on scroll)
+    const headerEl = document.getElementById('header');
+    if (headerEl) {
+      const handleHeaderScroll = () => {
+        if (window.scrollY > 20) {
+          headerEl.classList.add('scrolled');
+        } else {
+          headerEl.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+      handleHeaderScroll();
+    }
+
     // 1. Mobile Menu Drawer Toggle
     const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -129,4 +143,89 @@
         }
       });
     });
+
+    // 6. Global Interactive Dot & Follower Custom Cursor
+    (function initConquerCursor() {
+      if (typeof window === 'undefined') return;
+      // Do not run on touch/mobile devices
+      if (window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
+
+      const dot = document.createElement('div');
+      dot.className = 'conquer-cursor-dot';
+      const follower = document.createElement('div');
+      follower.className = 'conquer-cursor-follower';
+
+      const attachCursor = () => {
+        if (!document.body.contains(dot)) document.body.appendChild(dot);
+        if (!document.body.contains(follower)) document.body.appendChild(follower);
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', attachCursor);
+      } else {
+        attachCursor();
+      }
+
+      let mouseX = -100, mouseY = -100;
+      let followerX = -100, followerY = -100;
+      let isVisible = false;
+
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        if (!isVisible) {
+          isVisible = true;
+          dot.style.opacity = '1';
+          follower.style.opacity = '1';
+        }
+        dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      }, { passive: true });
+
+      window.addEventListener('mousedown', () => {
+        follower.classList.add('clicking');
+      });
+
+      window.addEventListener('mouseup', () => {
+        follower.classList.remove('clicking');
+      });
+
+      document.addEventListener('mouseleave', () => {
+        isVisible = false;
+        dot.style.opacity = '0';
+        follower.style.opacity = '0';
+      });
+
+      document.addEventListener('mouseenter', () => {
+        isVisible = true;
+        dot.style.opacity = '1';
+        follower.style.opacity = '1';
+      });
+
+      // Smooth 60fps lerp loop for follower
+      function renderFollower() {
+        followerX += (mouseX - followerX) * 0.18;
+        followerY += (mouseY - followerY) * 0.18;
+        follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0)`;
+        requestAnimationFrame(renderFollower);
+      }
+      requestAnimationFrame(renderFollower);
+
+      // Interactive element hover scale
+      const interactiveSelector = 'a, button, input, textarea, select, [role="button"], .choose-box, .value-arrow-btn, .industry-tab-btn, .mobile-toggle-btn, .blob-btn';
+
+      document.addEventListener('mouseover', (e) => {
+        if (e.target && e.target.closest && e.target.closest(interactiveSelector)) {
+          follower.classList.add('hovering');
+          dot.classList.add('hovering');
+        }
+      });
+
+      document.addEventListener('mouseout', (e) => {
+        if (e.target && e.target.closest && e.target.closest(interactiveSelector)) {
+          follower.classList.remove('hovering');
+          dot.classList.remove('hovering');
+        }
+      });
+    })();
+
 

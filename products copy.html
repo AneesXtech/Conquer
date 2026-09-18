@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Products &amp; Services | Conquer — Solutions That Conquer</title>
+  <meta name="title" content="Products &amp; Services | Conquer — Solutions That Conquer">
+  <meta name="description"
+    content="We turn everyday problems into practical, smart and efficient solutions. Explore Conquer's growing product lineup: Smarter Event Parking, Never Miss A Due Date, Cloudy App, and upcoming inventions.">
+  <meta name="keywords"
+    content="conquer products, smarter event parking, payment reminder app, due date reminder, cloudy app, innovation startup, practical inventions, bring the bold">
+  <meta name="author" content="Conquer">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#FF5A1F">
+  <link rel="canonical" href="https://conquer-three.vercel.app/products.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://conquer-three.vercel.app/products.html">
+  <meta property="og:title" content="Products &amp; Services | Conquer — Solutions That Conquer">
+  <meta property="og:description"
+    content="We turn everyday problems into practical, smart and efficient solutions. Ideas made real.">
+  <meta property="og:image" content="https://conquer-three.vercel.app/images/og-products.jpg">
+  <meta property="og:image:secure_url" content="https://conquer-three.vercel.app/images/og-products.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Conquer Products &amp; Services">
+  <meta property="og:site_name" content="Conquer">
+
+  <!-- Twitter / X Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://conquer-three.vercel.app/products.html">
+  <meta name="twitter:title" content="Products &amp; Services | Conquer — Solutions That Conquer">
+  <meta name="twitter:description"
+    content="We turn everyday problems into practical, smart and efficient solutions. Ideas made real.">
+  <meta name="twitter:image" content="https://conquer-three.vercel.app/images/og-products.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Production Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ==========================================================================
+       CONQUER — PRODUCTS & SERVICES (STICKY STACKING CARDS SYSTEM)
+       ========================================================================== */
+    :root {
+      --sastik-bg: #050508;
+      --sastik-card-bg: rgba(18, 18, 26, 0.7);
+      --sastik-card-border: rgba(255, 255, 255, 0.09);
+      --sastik-text-primary: #ffffff;
+      --sastik-text-secondary: #9ea0b8;
+      --sastik-text-muted: #676982;
+      --sastik-accent: #ff5a1f;
+      --sastik-accent-glow: rgba(255, 90, 31, 0.4);
+    }
+
+    body {
+      background-color: var(--sastik-bg) !important;
+      color: var(--sastik-text-primary);
+      font-family: var(--font-body, 'Poppins', sans-serif);
+      overflow-x: clip !important;
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+    }
+
+    /* Ambient Background Glows */
+    .sastik-ambient-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.28;
+      max-width: 100%;
+    }
+
+    .glow-1 {
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.30) 0%, rgba(255, 90, 31, 0.10) 50%, transparent 70%);
+    }
+
+    .glow-2 {
+      top: 45vh;
+      left: -80px;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.18) 0%, transparent 70%);
+    }
+
+    .glow-3 {
+      top: 80vh;
+      right: -80px;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.18) 0%, transparent 70%);
+    }
+
+    @media (max-width: 768px) {
+      .sastik-ambient-glow {
+        display: none;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       01. HERO BREADCRUMB (ABOUT US EXACT MATCH DESIGN)
+       -------------------------------------------------------------------------- */
+    .about-hero-breadcrumb-section {
+      width: 100%;
+      min-height: 500px;
+      padding: 210px 24px 130px 24px;
+      background: #050508;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .about-card-dot {
+      position: absolute;
+      top: 32px;
+      left: 36px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #ff5a1f;
+      box-shadow: 0 0 12px #ff5a1f, 0 0 24px rgba(255, 90, 31, 0.55);
+      z-index: 3;
+    }
+
+    .about-card-grid {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 36px 36px;
+      background-position: center center;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .about-card-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .about-card-glow.glow-top-left {
+      top: -120px;
+      left: -120px;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.28) 0%, rgba(255, 90, 31, 0.06) 55%, transparent 75%);
+    }
+
+    .about-card-glow.glow-bottom-right {
+      bottom: -120px;
+      right: -120px;
+      width: 560px;
+      height: 560px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.32) 0%, rgba(255, 90, 31, 0.07) 55%, transparent 75%);
+    }
+
+    .about-hero-band-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .about-card-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #ffffff;
+      margin: 0 0 20px 0;
+      line-height: 1.08;
+      text-transform: uppercase !important;
+    }
+
+    .title-gradient-orange {
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff7036 50%, #ff8c42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .about-card-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body, 'Poppins', sans-serif);
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #9fa0b5;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      padding: 8px 24px;
+      backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+
+    .crumb-link {
+      color: #9fa0b5;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .crumb-link:hover {
+      color: #ffffff;
+    }
+
+    .crumb-sep {
+      color: #65667a;
+      margin: 0 10px;
+    }
+
+    .crumb-current {
+      color: #ff5a1f;
+      font-weight: 600;
+    }
+
+    .hero-lead-text {
+      font-size: clamp(16px, 1.3vw, 19px);
+      line-height: 1.7;
+      color: #a0a2bc;
+      max-width: 700px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+
+    /* --------------------------------------------------------------------------
+       02. SECTION LABELS & COMMON TYPOGRAPHY
+       -------------------------------------------------------------------------- */
+    .section-eyebrow-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body, 'Poppins', sans-serif);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ff5a1f;
+      margin-bottom: 16px;
+    }
+
+    .section-headline {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.3rem, 4vw, 3.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: #ffffff;
+      margin: 0 0 24px 0;
+      text-transform: uppercase;
+    }
+
+    .section-subtext {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #9ea0b8;
+      margin-bottom: 24px;
+    }
+
+    /* --------------------------------------------------------------------------
+       03. WHAT WE DO / INTRO (SPLIT GRID FROM REFERENCE)
+       -------------------------------------------------------------------------- */
+    .products-intro-section {
+      padding: 110px 0;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: #050508;
+    }
+
+    .intro-split-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .intro-image-frame {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 90, 31, 0.14);
+      aspect-ratio: 4 / 3;
+    }
+
+    .intro-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .intro-image-frame:hover img {
+      transform: scale(1.04);
+    }
+
+    .intro-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      background: rgba(255, 90, 31, 0.12);
+      border: 1px solid rgba(255, 90, 31, 0.3);
+      color: #ff5a1f;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .intro-badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ff5a1f;
+      box-shadow: 0 0 8px #ff5a1f;
+    }
+
+    /* --------------------------------------------------------------------------
+       04. PRODUCTS SHOWCASE — STICKY STACKING CARDS
+       ========================================================================== */
+    .products-showcase-section {
+      padding: 120px 0 160px 0;
+      position: relative;
+      background: #050508;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .showcase-header {
+      margin-bottom: 60px;
+      max-width: 720px;
+    }
+
+    /* Sticky Cards Container */
+    .products-stack-runway {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    /* The Single Sticky Product Card */
+    .product-sticky-card {
+      position: -webkit-sticky;
+      position: sticky;
+      /* Each card stacks neatly down the viewport */
+      top: calc(95px + var(--stack-idx, 0) * 22px);
+      z-index: calc(10 + var(--stack-idx, 0));
+      background: #0c0d14;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 54px;
+      align-items: center;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85), 0 0 35px rgba(255, 90, 31, 0.1);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+      margin-bottom: 40px;
+      backdrop-filter: blur(20px);
+      box-sizing: border-box;
+    }
+
+    .product-sticky-card:hover {
+      border-color: rgba(255, 90, 31, 0.45);
+      box-shadow: 0 35px 85px rgba(0, 0, 0, 0.9), 0 0 50px rgba(255, 90, 31, 0.18);
+    }
+
+    /* Reverse layout for alternate cards */
+    .product-sticky-card.card-reverse {
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+
+    .product-sticky-card.card-reverse .product-media-wrap {
+      order: 2;
+    }
+
+    .product-sticky-card.card-reverse .product-content-wrap {
+      order: 1;
+    }
+
+    /* Media Visual Box */
+    .product-media-wrap {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16 / 11;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #06060a;
+    }
+
+    .product-media-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .product-sticky-card:hover .product-media-img {
+      transform: scale(1.05);
+    }
+
+    .product-corner-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(5, 5, 8, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 9999px;
+      padding: 6px 16px;
+      backdrop-filter: blur(12px);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #ff5a1f;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    /* Card Content Side */
+    .product-content-wrap {
+      position: relative;
+      z-index: 1;
+    }
+
+    .product-card-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .product-num-giant {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: 52px;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.14);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .product-domain-tag {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ff5a1f;
+    }
+
+    .product-card-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2rem, 2.9vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin: 0 0 16px 0;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    .product-card-desc {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #9fa0b5;
+      margin: 0 0 28px 0;
+    }
+
+    .product-features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 34px;
+    }
+
+    .product-feature-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      padding: 7px 16px;
+      font-size: 12.5px;
+      color: #d2d4e4;
+      font-weight: 500;
+    }
+
+    .product-feature-tag svg {
+      color: #ff5a1f;
+      flex-shrink: 0;
+    }
+
+    /* 4th Card Special Theme */
+    .product-sticky-card.card-future-edition {
+      border-color: rgba(255, 90, 31, 0.35);
+      background: linear-gradient(135deg, rgba(20, 20, 32, 0.9) 0%, rgba(10, 10, 16, 0.95) 100%);
+    }
+
+    .product-sticky-card.card-future-edition .product-num-giant {
+      color: rgba(255, 90, 31, 0.4);
+    }
+
+    /* --------------------------------------------------------------------------
+       05. RESEARCH & DEVELOPMENT (WE INVEST HEAVILY IN R&D)
+       -------------------------------------------------------------------------- */
+    .products-rd-section {
+      padding: 110px 0;
+      position: relative;
+      background: #050508;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .rd-split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .rd-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 32px 0 36px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .rd-check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .rd-check-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 90, 31, 0.15);
+      border: 1px solid rgba(255, 90, 31, 0.4);
+      color: #ff5a1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .rd-check-text h4 {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: 16.5px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 4px 0;
+    }
+
+    .rd-check-text p {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #8e91a6;
+      margin: 0;
+    }
+
+    .rd-image-frame {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 90, 31, 0.12);
+      aspect-ratio: 4 / 3;
+    }
+
+    .rd-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .rd-image-frame:hover img {
+      transform: scale(1.04);
+    }
+
+    /* --------------------------------------------------------------------------
+       06. WHAT'S NEXT & FINAL CTA (BRING THE BOLD)
+       -------------------------------------------------------------------------- */
+    .products-cta-section {
+      padding: 100px 0 110px 0;
+      position: relative;
+      background: #050508;
+    }
+
+    .cta-banner-box {
+      background: linear-gradient(135deg, rgba(22, 22, 34, 0.85) 0%, rgba(12, 12, 18, 0.95) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 32px;
+      padding: 80px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 50px rgba(255, 90, 31, 0.15);
+    }
+
+    .cta-banner-glow {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.35) 0%, transparent 70%);
+      filter: blur(80px);
+      pointer-events: none;
+    }
+
+    .cta-banner-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .cta-banner-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.4rem, 4.8vw, 4rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.1;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+    }
+
+    .cta-banner-desc {
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: #a0a2bc;
+      margin: 0 auto 36px auto;
+      max-width: 620px;
+    }
+
+    .cta-btn-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn-secondary-glass {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 28px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff !important;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-family: var(--font-body, 'Poppins', sans-serif);
+    }
+
+    .btn-secondary-glass:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* --------------------------------------------------------------------------
+       07. RESPONSIVE MEDIA QUERIES
+       -------------------------------------------------------------------------- */
+    @media (max-width: 991px) {
+      .about-hero-breadcrumb-section {
+        min-height: 400px;
+        padding: 160px 20px 90px 20px;
+      }
+
+      .intro-split-layout,
+      .rd-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .product-sticky-card,
+      .product-sticky-card.card-reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 34px 24px;
+        top: calc(85px + var(--stack-idx, 0) * 12px);
+      }
+
+      .product-sticky-card.card-reverse .product-media-wrap {
+        order: 1;
+      }
+
+      .product-sticky-card.card-reverse .product-content-wrap {
+        order: 2;
+      }
+
+      .cta-banner-box {
+        padding: 60px 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .about-hero-breadcrumb-section {
+        min-height: 340px;
+        padding: 130px 16px 60px 16px;
+      }
+
+      .product-sticky-card {
+        padding: 24px 18px;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        top: calc(80px + var(--stack-idx, 0) * 8px);
+      }
+
+      .product-media-wrap {
+        aspect-ratio: 16 / 10;
+      }
+
+      .cta-btn-group {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .cta-btn-group .blob-btn,
+      .cta-btn-group .btn-secondary-glass {
+        width: 100% !important;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Ambient Radial Glows -->
+  <div class="sastik-ambient-glow glow-1"></div>
+  <div class="sastik-ambient-glow glow-2"></div>
+  <div class="sastik-ambient-glow glow-3"></div>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR (FROSTED OBSIDIAN GLASS)
+       ======================================================================== -->
+  <header class="header-area" id="header">
+    <div class="header-area-inner">
+      <div class="brand-area-wrap">
+        <a href="index.html" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="images/logo.png" alt="Conquer Logo" style="height: 52px; width: auto; display: block;">
+        </a>
+      </div>
+
+      <nav class="nav-area">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Conquer</a>
+        <a href="products.html" class="active">Products &amp; Services</a>
+        <a href="approach.html">Our Approach</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-area-actions">
+        <a href="contact.html" class="btn-area-orange">
+          <span>Let's talk</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <button class="btn-area-menu" id="mobile-toggle-btn" aria-label="Toggle menu">
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Conquer</a>
+      <a href="products.html" class="mobile-nav-link active">Products &amp; Services</a>
+      <a href="approach.html" class="mobile-nav-link">Our Approach</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div style="margin-top: 15px;">
+        <a href="contact.html" class="btn-area-orange"
+          style="justify-content: center; width: 100%; border-radius: 9999px;">
+          <span>Let's talk</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========================================================================
+         HERO SECTION: EXACT ABOUT US / APPROACH HERO STYLE
+         ======================================================================== -->
+    <section class="about-hero-breadcrumb-section">
+      <!-- Corner Indicator Dot (Top-Left) -->
+      <span class="about-card-dot" aria-hidden="true"></span>
+
+      <!-- Full-Width Tech Grid Pattern Overlay -->
+      <div class="about-card-grid" aria-hidden="true"></div>
+
+      <!-- Ambient Cross Corner Glows -->
+      <div class="about-card-glow glow-top-left" aria-hidden="true"></div>
+      <div class="about-card-glow glow-bottom-right" aria-hidden="true"></div>
+
+      <div class="about-hero-band-inner">
+        <h1 class="about-card-title">
+          Products &amp; <span class="title-gradient-orange">Services</span>
+        </h1>
+        <nav class="about-card-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" class="crumb-link">Home</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current">Products &amp; Services</span>
+        </nav>
+        <p class="hero-lead-text">
+          We are an innovation &amp; invention start up company that solves our everyday problems in a real way through mobile applications, creative products and partnering with others to deliver clever solutions.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         01. WHAT WE DO — INNOVATION WITH PURPOSE
+         ======================================================================== -->
+    <section class="products-intro-section" id="what-we-do">
+      <div class="container">
+        <div class="intro-split-layout">
+
+          <!-- Left: Framed R&D Image -->
+          <div class="intro-image-wrap">
+            <div class="intro-image-frame">
+              <img src="images/sketching-plan.jpg" alt="Conquer innovation with purpose" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right: What We Do Copy -->
+          <div class="intro-text-wrap">
+            <div class="intro-badge-pill">
+              <span class="intro-badge-dot"></span>
+              WHAT WE DO
+            </div>
+
+            <h2 class="section-headline">
+              Innovation<br>With Purpose.
+            </h2>
+
+            <p class="section-subtext">
+              We are an innovation &amp; invention start up company that solves our everyday problems in a real way through mobile applications, creative products and partnering with others to deliver clever solutions.
+            </p>
+
+            <p class="section-subtext" style="color: #c4c6dc;">
+              Our mission is to produce practical, smart &amp; efficient inventions to make our lives easier, more convenient and be in control. We know each journey has its challenges, but we conquer them together when we unite.
+            </p>
+
+            <div style="margin-top: 28px;">
+              <a href="#products-showcase" class="blob-btn">
+                <span>See Our Inventions</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         02. PRODUCTS SHOWCASE — STICKY STACKING CARDS
+         ======================================================================== -->
+    <section class="products-showcase-section" id="products-showcase">
+      <div class="container">
+
+        <!-- Showcase Header -->
+        <div class="showcase-header">
+          <span class="section-eyebrow-tag">[ OUR PRODUCTS SO FAR ]</span>
+          <h2 class="section-headline">
+            Our Products<br>So Far.
+          </h2>
+          <p class="section-subtext">
+            Scroll down to explore each single card — every solution is built to tackle everyday problems in a real way through clever mobile apps and creative products.
+          </p>
+        </div>
+
+        <!-- Sticky Stacking Cards Runway -->
+        <div class="products-stack-runway" id="stack-runway">
+
+          <!-- STICKY CARD 01: ALTERNATIVE EVENT PARKING -->
+          <article class="product-sticky-card" style="--stack-idx: 0;">
+            <div class="product-media-wrap">
+              <span class="product-corner-badge">Mobile Application</span>
+              <img src="images/innov-parking.jpg" alt="Motorists alternative event parking app by Conquer" class="product-media-img"
+                loading="lazy">
+            </div>
+
+            <div class="product-content-wrap">
+              <div class="product-card-top-row">
+                <span class="product-domain-tag">DOMAIN 01 • MOTORIST &amp; MOBILITY APP</span>
+                <span class="product-num-giant">01</span>
+              </div>
+
+              <h3 class="product-card-title">
+                Alternative Event<br>Parking Spots.
+              </h3>
+
+              <p class="product-card-desc">
+                We try to find ways for motorists to find alternative event parking spots using a mobile app — eliminating venue congestion, saving valuable time, and making event parking stress-free.
+              </p>
+
+              <div class="product-features-list">
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Alternative Spot Discovery
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
+                  </svg>
+                  Congestion Avoidance
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Smart Mobile Navigation
+                </span>
+              </div>
+
+              <a href="contact.html?product=parking" class="blob-btn">
+                <span>Explore Solution</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- STICKY CARD 02: STAY ON TOP OF DUE DATES (REVERSED) -->
+          <article class="product-sticky-card card-reverse" style="--stack-idx: 1;">
+            <div class="product-media-wrap">
+              <span class="product-corner-badge">Mobile Application</span>
+              <img src="images/innov-payment.jpg" alt="Payment and contractual due date reminder app"
+                class="product-media-img" loading="lazy">
+            </div>
+
+            <div class="product-content-wrap">
+              <div class="product-card-top-row">
+                <span class="product-domain-tag">DOMAIN 02 • SMART REMINDER APP</span>
+                <span class="product-num-giant">02</span>
+              </div>
+
+              <h3 class="product-card-title">
+                Stay On Top Of<br>Due Dates.
+              </h3>
+
+              <p class="product-card-desc">
+                We came up with an app to help consumers &amp; business stay on top of their payment / contractual due dates by reminding them ahead of time. Now you have no reason to be late…
+              </p>
+
+              <div class="product-features-list">
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  Ahead-of-Time Reminders
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                    <line x1="2" y1="10" x2="22" y2="10"></line>
+                  </svg>
+                  Payment &amp; Contractual Due Dates
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  Now You Have No Reason To Be Late
+                </span>
+              </div>
+
+              <a href="contact.html?product=duedate" class="blob-btn">
+                <span>Explore Solution</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- STICKY CARD 03: CLOUDY APP -->
+          <article class="product-sticky-card" style="--stack-idx: 2;">
+            <div class="product-media-wrap">
+              <span class="product-corner-badge">Mobile Application</span>
+              <img src="images/innov-cloudy.jpg" alt="Cloudy app from Conquer" class="product-media-img" loading="lazy">
+            </div>
+
+            <div class="product-content-wrap">
+              <div class="product-card-top-row">
+                <span class="product-domain-tag">DOMAIN 03 • CLOUD LABS</span>
+                <span class="product-num-giant">03</span>
+              </div>
+
+              <h3 class="product-card-title">
+                Cloudy<br>App.
+              </h3>
+
+              <p class="product-card-desc">
+                Cloudy app — clever mobile application and platform designed to solve daily friction points. <em>(AL to add more details here)</em>
+              </p>
+
+              <div class="product-features-list">
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                  </svg>
+                  Cloud Collaboration
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Frictionless Workflows
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                  More Details Coming Soon
+                </span>
+              </div>
+
+              <a href="contact.html?product=cloudy" class="blob-btn">
+                <span>Explore Solution</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- STICKY CARD 04: MORE EXCITING NEW PRODUCTS ON THE WAY -->
+          <article class="product-sticky-card card-reverse card-future-edition" style="--stack-idx: 3;">
+            <div class="product-media-wrap">
+              <span class="product-corner-badge" style="color: #ffffff; background: #ff5a1f;">In The Pipeline</span>
+              <img src="images/innov-all.jpg" alt="More exciting new products on the way" class="product-media-img" loading="lazy">
+            </div>
+
+            <div class="product-content-wrap">
+              <div class="product-card-top-row">
+                <span class="product-domain-tag">THE FUTURE OF CONQUER</span>
+                <span class="product-num-giant">04</span>
+              </div>
+
+              <h3 class="product-card-title">
+                More Exciting New<br>Products On The Way!
+              </h3>
+
+              <p class="product-card-desc">
+                We are an innovation &amp; invention start up company that solves our everyday problems in a real way. More exciting new products are already on the way through creative products, mobile apps, and partnering with others to deliver clever solutions!
+              </p>
+
+              <div class="product-features-list">
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                  </svg>
+                  Physical Inventions
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  Mobile App Projects
+                </span>
+                <span class="product-feature-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Clever Partner Solutions
+                </span>
+              </div>
+
+              <a href="contact.html?subject=partnership" class="blob-btn">
+                <span>Partner With Us</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         03. RESEARCH & DEVELOPMENT (WE INVEST HEAVILY IN R&D)
+         ======================================================================== -->
+    <section class="products-rd-section" id="research">
+      <div class="container">
+        <div class="rd-split-grid">
+
+          <!-- Left: Narrative & Checkpoints -->
+          <div class="rd-content-col">
+            <span class="section-eyebrow-tag">[ RESEARCH &amp; DEVELOPMENT ]</span>
+            <h2 class="section-headline">
+              We Invest Heavily<br>On R&amp;D.
+            </h2>
+            <p class="section-subtext">
+              We invest heavily on Research &amp; Development because we know how important it is for someone to do the trialing and error. We put our conclusions to the test, subject to scrutiny and pass a strict viability and verification process.
+            </p>
+
+            <ul class="rd-checklist">
+              <li class="rd-check-item">
+                <div class="rd-check-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="rd-check-text">
+                  <h4>We Put Ourselves In Your Shoes</h4>
+                  <p>Imagine &amp; try to understand community unique needs, preferences and tastes.</p>
+                </div>
+              </li>
+
+              <li class="rd-check-item">
+                <div class="rd-check-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="rd-check-text">
+                  <h4>Strict Viability &amp; Verification</h4>
+                  <p>We put our conclusions to the test, subject to scrutiny and pass a strict viability and verification process.</p>
+                </div>
+              </li>
+
+              <li class="rd-check-item">
+                <div class="rd-check-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="rd-check-text">
+                  <h4>Back To The Drawing Board</h4>
+                  <p>Undertake surveys, challenge established conventions and try to conquer them with alternative workable solutions — practical and cost effective.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="rd-btn-wrap">
+              <a href="approach.html" class="blob-btn">
+                <span>See Our Full Approach</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Clean Modern Innovation Studio Visual Frame -->
+          <div class="rd-image-col">
+            <div class="rd-image-frame">
+              <img src="images/Aboutus-02.jpg" alt="Conquer innovation research and development"
+                loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         04. WHAT'S NEXT & FINAL CALL TO ACTION (BRING THE BOLD)
+         ======================================================================== -->
+    <section class="products-cta-section" id="cta">
+      <div class="container">
+        <div class="cta-banner-box">
+          <div class="cta-banner-glow"></div>
+          <div class="cta-banner-inner">
+            <span class="section-eyebrow-tag" style="justify-content: center;">[ BRING THE BOLD ]</span>
+            <h2 class="cta-banner-title">
+              Bring<br>The Bold.
+            </h2>
+            <p class="cta-banner-desc">
+              We believe in ourselves, our services &amp; products — our mobile apps projects &amp; our physical products. The question is — Do you?
+            </p>
+
+            <div class="cta-btn-group">
+              <a href="contact.html" class="blob-btn">
+                <span>Get In Touch</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global SVG Filter for Blob Buttons -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+      style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+          <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+
+  </main>
+
+
+  <!-- =========================================================
+       05. SIGNATURE RED GRADIENT NEWSLETTER STRIP (EXACT MATCH)
+  ========================================================= -->
+  <section class="red-newsletter-strip" id="contact">
+    <div class="container red-newsletter-inner">
+      <div class="red-newsletter-title">
+        Sign up for email updates
+      </div>
+      <form class="red-newsletter-form"
+        onsubmit="event.preventDefault(); alert('Thank you for subscribing to CONQUER email updates!');">
+        <input type="email" class="red-newsletter-input" placeholder="Enter your email" required>
+        <button type="submit" class="red-newsletter-btn">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       06. ENTERPRISE FOOTER (ABOUT / HOME EXACT MATCH)
+  ========================================================= -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-logo-wrap">
+        <a href="#top" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="images/logo.png" alt="Conquer Solutions" class="footer-logo-img"
+            style="width: auto; display: block;">
+        </a>
+        <div class="footer-logo-sub" style="margin-top: 12px;">
+          RESEARCH • PROGRESS • HOPE • INNOVATION STUDIO
+        </div>
+      </div>
+
+      <!-- Horizontal Menu Links & Real SVG Social Icons Row -->
+      <div class="footer-middle-row">
+
+        <div class="footer-nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Conquer</a>
+          <a href="products.html" class="active">Products &amp; Services</a>
+          <a href="approach.html">Our Approach</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- REAL HIGH-RESOLUTION SVG SOCIAL MEDIA ICONS -->
+        <div class="footer-social-icons">
+
+          <!-- Facebook SVG -->
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-icon" title="Facebook"
+            aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+
+          <!-- Instagram SVG -->
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-icon" title="Instagram"
+            aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn SVG -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-icon" title="LinkedIn"
+            aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.239-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal Links -->
+      <div class="footer-bottom-row">
+        <div>CONQUER. All rights reserved.</div>
+
+        <div class="footer-legal-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Your Privacy Choices</a>
+          <a href="#top" class="footer-back-to-top-link"
+            onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+            <span>Back to top</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+
+  <!-- Sticky Stacking Dynamic Scale & Depth Controller -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = document.querySelectorAll('.product-sticky-card');
+      if (!cards.length) return;
+
+      function updateCardStacking() {
+        if (window.innerWidth < 992) {
+          cards.forEach(c => {
+            c.style.transform = 'none';
+            c.style.filter = 'none';
+          });
+          return;
+        }
+
+        cards.forEach((card, idx) => {
+          const nextCard = cards[idx + 1];
+          if (nextCard) {
+            const nextRect = nextCard.getBoundingClientRect();
+            const cardRect = card.getBoundingClientRect();
+            const overlap = cardRect.bottom - nextRect.top;
+
+            if (overlap > 0) {
+              const progress = Math.min(1, Math.max(0, overlap / cardRect.height));
+              const scale = 1 - progress * 0.05;
+              const brightness = 1 - progress * 0.25;
+              card.style.transform = `scale(${scale})`;
+              card.style.filter = `brightness(${brightness})`;
+            } else {
+              card.style.transform = 'scale(1)';
+              card.style.filter = 'brightness(1)';
+            }
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateCardStacking, { passive: true });
+      window.addEventListener('resize', updateCardStacking, { passive: true });
+      updateCardStacking();
+    });
+  </script>
+</body>
+
+</html>

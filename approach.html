@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Our Approach — Research, Testing & Innovation | Conquer</title>
+  <meta name="title" content="Our Approach — Research, Testing & Innovation | Conquer">
+  <meta name="description"
+    content="Our approach to innovation, research and development. We invest heavily in R&D, test every idea against real needs, and take it one step at a time.">
+  <meta name="keywords"
+    content="conquer approach, research and development, innovation process, product testing, conquer studio">
+  <meta name="author" content="Conquer">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#050508">
+  <link rel="canonical" href="https://conquer-three.vercel.app/approach.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://conquer-three.vercel.app/approach.html">
+  <meta property="og:title" content="Our Approach — Research, Testing & Innovation | Conquer">
+  <meta property="og:description"
+    content="We invest heavily in Research & Development, test our conclusions against strict viability checks, and take everyday problems one step at a time.">
+  <meta property="og:image" content="https://conquer-three.vercel.app/images/og-approach.jpg">
+  <meta property="og:site_name" content="Conquer">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://conquer-three.vercel.app/approach.html">
+  <meta name="twitter:title" content="Our Approach — Research, Testing & Innovation | Conquer">
+  <meta name="twitter:description"
+    content="How Conquer researches, tests and builds practical, cost-effective solutions — one step at a time.">
+  <meta name="twitter:image" content="https://conquer-three.vercel.app/images/og-approach.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://conquer-three.vercel.app/#organization",
+        "name": "Conquer",
+        "url": "https://conquer-three.vercel.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://conquer-three.vercel.app/images/logo.png"
+        },
+        "sameAs": [
+          "https://facebook.com",
+          "https://instagram.com",
+          "https://linkedin.com"
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://conquer-three.vercel.app/approach.html#webpage",
+        "url": "https://conquer-three.vercel.app/approach.html",
+        "name": "Our Approach — Research, Testing & Innovation",
+        "description": "Conquer's approach to innovation, research and development.",
+        "isPartOf": {
+          "@id": "https://conquer-three.vercel.app/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://conquer-three.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Approach",
+              "item": "https://conquer-three.vercel.app/approach.html"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Production Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       SASTIK BLACK THEME STYLES (PURE OBSIDIAN & HIGH-CONTRAST AESTHETICS)
+       ========================================================================== */
+    :root {
+      --sastik-bg: #050508;
+      --sastik-card-bg: rgba(18, 18, 26, 0.65);
+      --sastik-card-border: rgba(255, 255, 255, 0.08);
+      --sastik-card-hover: rgba(255, 255, 255, 0.14);
+      --sastik-text-primary: #ffffff;
+      --sastik-text-secondary: #9ea0b8;
+      --sastik-text-muted: #676982;
+      --sastik-accent: #ff5a1f;
+      --sastik-accent-glow: rgba(255, 90, 31, 0.4);
+    }
+
+    body {
+      background-color: var(--sastik-bg) !important;
+      color: var(--sastik-text-primary);
+      font-family: var(--font-body, 'Inter', sans-serif);
+      overflow-x: clip !important;
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+    }
+
+    /* Ambient Background Glows — Home Page Orange Palette */
+    .sastik-ambient-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.28;
+      max-width: 100%;
+    }
+
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      section[id] {
+        scroll-margin-top: 68px !important;
+      }
+
+      .sastik-ambient-glow,
+      .about-card-glow {
+        display: none !important;
+      }
+    }
+
+    .glow-1 {
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.30) 0%, rgba(255, 90, 31, 0.10) 50%, transparent 70%);
+    }
+
+    .glow-2 {
+      top: 1400px;
+      left: 10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.18) 0%, transparent 70%);
+    }
+
+    .glow-3 {
+      top: 2600px;
+      right: 5%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.24) 0%, rgba(255, 90, 31, 0.08) 60%, transparent 75%);
+    }
+
+    /* --------------------------------------------------------------------------
+       01. NEXTMIND AI-STARTUP HERO BREADCRUMB (EXPANDED CINEMATIC HEIGHT)
+       -------------------------------------------------------------------------- */
+    .about-hero-breadcrumb-section {
+      width: 100%;
+      min-height: 480px;
+      padding: 200px 24px 120px 24px;
+      background: #050508;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .about-card-dot {
+      position: absolute;
+      top: 32px;
+      left: 36px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #ff5a1f;
+      box-shadow: 0 0 12px #ff5a1f, 0 0 24px rgba(255, 90, 31, 0.55);
+      z-index: 3;
+    }
+
+    .about-card-grid {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 36px 36px;
+      background-position: center center;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .about-card-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .about-card-glow.glow-top-left {
+      top: -120px;
+      left: -120px;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.28) 0%, rgba(255, 90, 31, 0.06) 55%, transparent 75%);
+    }
+
+    .about-card-glow.glow-bottom-right {
+      bottom: -120px;
+      right: -120px;
+      width: 560px;
+      height: 560px;
+      background: radial-gradient(circle, rgba(255, 90, 31, 0.32) 0%, rgba(255, 90, 31, 0.07) 55%, transparent 75%);
+    }
+
+    .about-hero-band-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 920px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .about-card-title {
+      font-family: var(--font-display, 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif);
+      font-size: clamp(3rem, 5.8vw, 4.8rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #ffffff;
+      margin: 0 0 20px 0;
+      line-height: 1.08;
+      text-transform: uppercase !important;
+    }
+
+    .title-gradient-orange {
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff7036 50%, #ff8c42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .about-card-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
+      font-size: 14px;
+      font-weight: 500;
+      color: #9fa0b5;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      padding: 8px 24px;
+      backdrop-filter: blur(8px);
+    }
+
+    .crumb-link {
+      color: #9fa0b5;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .crumb-link:hover {
+      color: #ffffff;
+    }
+
+    .crumb-sep {
+      color: #65667a;
+      margin: 0 10px;
+      font-weight: 400;
+    }
+
+    .crumb-current {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero-breadcrumb-section {
+        padding: 105px 16px 42px 16px;
+      }
+
+      .about-card-dot {
+        top: 18px;
+        left: 20px;
+      }
+    }
+
+    /* ==========================================================================
+       NEXTMIND COMMON SECTION SYSTEM
+       ========================================================================== */
+    .about-section {
+      padding: 78px 0;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      background: #050508;
+    }
+
+    .about-eyebrow-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ff5a1f;
+      margin-bottom: 14px;
+    }
+
+    .about-eyebrow-tag::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #ff5a1f;
+      border-radius: 1px;
+    }
+
+    .about-section-heading {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2rem, 3.2vw, 2.9rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 18px;
+      text-transform: uppercase !important;
+    }
+
+    /* --------------------------------------------------------------------------
+       01 — OUR STORY SPLIT SECTION (CLEAN IMAGE & SINGLE BUTTON)
+       -------------------------------------------------------------------------- */
+    .overview-video-section {
+      padding: 95px 0 105px 0;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: #050508;
+    }
+
+    .overview-split-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1.15fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    /* Left Image Card Frame */
+    .overview-image-frame {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      aspect-ratio: 16 / 11;
+      min-height: 400px;
+      background: #0d0f18;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 90, 31, 0.12);
+    }
+
+    .overview-simple-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .overview-image-frame:hover .overview-simple-img {
+      transform: scale(1.03);
+    }
+
+    /* Right Side Content */
+    .overview-content-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .overview-eyebrow {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ff5a1f;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .overview-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.3rem, 3.8vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #ffffff;
+      margin: 0 0 24px 0;
+      text-transform: uppercase !important;
+    }
+
+    .overview-paragraphs-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+
+    .overview-p {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 16px;
+      line-height: 1.75;
+      color: #9fa0b5;
+      margin: 0;
+    }
+
+    .overview-btn-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-overview-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff7036 100%);
+      color: #ffffff !important;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 34px;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(255, 90, 31, 0.4);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-overview-primary:hover {
+      background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(255, 90, 31, 0.6);
+      color: #ffffff !important;
+    }
+
+    .btn-overview-primary svg {
+      transition: transform 0.3s ease;
+    }
+
+    .btn-overview-primary:hover svg {
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 991px) {
+      .overview-split-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .overview-image-frame {
+        min-height: 280px;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       02 — WHY CONQUER / TJ CHOOSE SECTION (REFERENCE EXACT MATCH)
+       -------------------------------------------------------------------------- */
+    .tj-choose-section {
+      padding: 95px 0 105px 0;
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+      background: #000000;
+    }
+
+    .tj-choose-section .sec-heading {
+      margin-bottom: 54px;
+    }
+
+    .tj-choose-section .sub-title {
+      display: inline-block;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ff5a1f;
+      margin-bottom: 22px;
+    }
+
+    .tj-choose-section .sec-heading-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 36px;
+    }
+
+    .tj-choose-section .sec-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #ffffff;
+      margin: 0;
+      flex: 1.25;
+      text-transform: uppercase !important;
+    }
+
+    .tj-choose-section .desc-wrap {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .tj-choose-section .desc {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 15.5px;
+      line-height: 1.68;
+      color: #9fa0b5;
+      margin: 0;
+    }
+
+    .tj-choose-section .btn-wrap {
+      flex-shrink: 0;
+    }
+
+    .tj-primary-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff7036 100%);
+      color: #ffffff !important;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 14.5px;
+      font-weight: 700;
+      padding: 9px 9px 9px 24px;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 8px 24px rgba(255, 90, 31, 0.38);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .tj-primary-btn:hover {
+      background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(255, 90, 31, 0.6);
+      color: #ffffff !important;
+    }
+
+    .tj-primary-btn .btn-text {
+      display: inline-block;
+      letter-spacing: 0.01em;
+    }
+
+    .tj-primary-btn .btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #050508;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .tj-primary-btn:hover .btn-icon {
+      transform: translate(2px, -2px);
+    }
+
+    /* 3-Cards Grid */
+    .choose-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .choose-box {
+      background: #141414;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 42px 28px 36px 28px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .choose-box:hover {
+      background: #ffffff;
+      border-color: rgba(255, 90, 31, 0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 90, 31, 0.14);
+    }
+
+    .choose-box:hover .title {
+      color: #050508 !important;
+    }
+
+    .choose-box:hover .desc {
+      color: #4a4d65 !important;
+    }
+
+    .choose-inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .choose-icon {
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: #07080c;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff5a1f;
+      margin-bottom: 28px;
+      transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-shrink: 0;
+    }
+
+    .choose-box:hover .choose-icon {
+      background: #ff5a1f;
+      border-color: #ff5a1f;
+      color: #ffffff;
+      transform: rotate(360deg);
+      box-shadow: 0 8px 24px rgba(255, 90, 31, 0.45);
+    }
+
+    .choose-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .choose-content .title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: 21px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      text-transform: none !important;
+      transition: color 0.3s ease;
+    }
+
+    .choose-content .desc {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #8e91a6;
+      margin: 0;
+      transition: color 0.3s ease;
+    }
+
+    .choose-mobile-btn {
+      display: none;
+      margin-top: 36px;
+      text-align: center;
+    }
+
+    @media (max-width: 1199px) {
+      .tj-choose-section .sec-heading-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .tj-choose-section .desc-wrap {
+        max-width: 100%;
+      }
+
+      .choose-desktop-btn {
+        display: none !important;
+      }
+
+      .choose-mobile-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .choose-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .tj-choose-section {
+        padding: 65px 0 75px 0;
+      }
+
+      .choose-box {
+        padding: 30px 22px;
+      }
+
+      .choose-icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 22px;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       04 — WHAT DRIVES US (SPLIT CONTENT & IMAGE WITH 3 PILLARS)
+       -------------------------------------------------------------------------- */
+    .about-drives-section {
+      padding: 95px 0 105px 0;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: #000000;
+    }
+
+    .about-drives-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .drives-sub-title {
+      display: inline-block;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ff5a1f;
+      margin-bottom: 20px;
+    }
+
+    .drives-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.3rem, 3.8vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #ffffff;
+      margin: 0 0 20px 0;
+      text-transform: uppercase !important;
+    }
+
+    .drives-desc {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 16px;
+      line-height: 1.75;
+      color: #9fa0b5;
+      margin: 0 0 30px 0;
+    }
+
+    /* Checkpoints List */
+    .drives-check-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .drives-check-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .drives-check-item:hover {
+      transform: translateX(6px);
+    }
+
+    .drives-check-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 90, 31, 0.14);
+      border: 1.5px solid #ff5a1f;
+      color: #ff5a1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .drives-check-item:hover .drives-check-badge {
+      background: #ff5a1f;
+      color: #ffffff;
+      box-shadow: 0 0 16px rgba(255, 90, 31, 0.6);
+      transform: scale(1.1);
+    }
+
+    .drives-check-text {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: 17.5px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    /* Right Image Wrapper (Clean Frame) */
+    .drives-img-wrapper {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      aspect-ratio: 16 / 12;
+      min-height: 400px;
+      background: #0d0f18;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 90, 31, 0.12);
+    }
+
+    .drives-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .drives-img-wrapper:hover img {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 991px) {
+      .about-drives-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .drives-img-wrapper {
+        min-height: 300px;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       03 — OUR APPROACH (CLEAN REFERENCE MATCH: TYPOGRAPHY + MINIMAL CONTROLS)
+       -------------------------------------------------------------------------- */
+    .about-values-section {
+      position: relative;
+      background: #050508;
+      height: 320vh;
+      /* Smooth pinned scroll runway */
+    }
+
+    .values-sticky-container {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      overflow: clip;
+      z-index: 5;
+    }
+
+    .values-sticky-container .container {
+      width: min(var(--max-width, 1400px), calc(100% - 60px));
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    /* Unified Section Eyebrow Subtitles (Matches [ OUR APPROACH ] exactly) */
+    .sub-title,
+    .overview-eyebrow,
+    .drives-sub-title,
+    .values-sub-tag,
+    .about-eyebrow-tag {
+      display: inline-block;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase !important;
+      color: #ff5a1f !important;
+      margin-bottom: 14px;
+    }
+
+    .values-header-wrap {
+      margin-bottom: 24px;
+      width: 100%;
+    }
+
+    .values-giant-title {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(4.5rem, 9.5vw, 8.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin: 0;
+      background: linear-gradient(135deg, #ff5a1f 0%, #ff8c42 45%, #ffffff 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      text-transform: uppercase !important;
+      display: block;
+      width: 100%;
+    }
+
+    .values-giant-title.switching {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+
+    /* Content Layout: Left Nav + Right Text (Spans container width gracefully) */
+    .values-content-layout {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 48px;
+      align-items: flex-start;
+      margin-top: 36px;
+      width: 100%;
+    }
+
+    .values-nav-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+    }
+
+    .values-dots-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding-left: 14px;
+    }
+
+    .value-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .value-dot:hover {
+      background: #ff5a1f;
+      transform: scale(1.3);
+    }
+
+    .value-dot.active {
+      height: 24px;
+      border-radius: 9999px;
+      background: #ff5a1f;
+      box-shadow: 0 0 12px #ff5a1f;
+    }
+
+    .values-arrows-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .value-arrow-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: transparent;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .value-arrow-btn:hover {
+      border-color: #ff5a1f;
+      background: #ff5a1f;
+      color: #ffffff;
+    }
+
+    .values-text-col {
+      width: 100%;
+      max-width: 1100px;
+      transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .values-text-col.switching {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    .values-card-heading {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: #ffffff;
+      margin: 0 0 18px 0;
+    }
+
+    .values-card-desc {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: clamp(17px, 1.3vw, 20px);
+      line-height: 1.8;
+      color: #a5a6b9;
+      margin: 0;
+      max-width: 950px;
+    }
+
+    @media (max-width: 991px) {
+      .about-values-section {
+        height: auto;
+        padding: 85px 0;
+      }
+
+      .values-sticky-container {
+        position: relative;
+        height: auto;
+        min-height: unset;
+        display: block;
+      }
+
+      .values-content-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .values-nav-col {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .values-dots-list {
+        flex-direction: row;
+        padding-left: 0;
+      }
+
+      .value-dot.active {
+        width: 24px;
+        height: 8px;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       05 — OUR PROMISE (CLEAN CTA WITH FLOATING AVATARS & GOOEY BLOB BUTTON)
+       -------------------------------------------------------------------------- */
+    .about-promise-section {
+      padding: 95px 0 105px 0;
+      border-bottom: none;
+      position: relative;
+    }
+
+    .promise-cta-card {
+      position: relative;
+      background: radial-gradient(circle at 50% 20%, rgba(255, 90, 31, 0.16) 0%, rgba(12, 13, 20, 0.98) 65%);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 28px;
+      padding: 72px 40px;
+      text-align: center;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 45px rgba(255, 90, 31, 0.12);
+    }
+
+    .promise-card-content {
+      position: relative;
+      z-index: 5;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .promise-card-content .about-eyebrow-tag {
+      margin-bottom: 16px;
+    }
+
+    .promise-card-content .about-section-heading {
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .promise-desc-p {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: #9fa0b5;
+      margin: 0 auto 10px auto;
+      max-width: 580px;
+    }
+
+    .promise-signoff-p {
+      font-family: var(--font-display, 'Space Grotesk', sans-serif);
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 22px auto 0 auto;
+      max-width: 580px;
+      letter-spacing: -0.01em;
+    }
+
+    /* Floating Avatars (Matching Reference) */
+    .cta-avatar {
+      position: absolute;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2.5px solid rgba(255, 90, 31, 0.35);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 0 0 16px rgba(255, 90, 31, 0.15);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .cta-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cta-avatar-1 {
+      width: 56px;
+      height: 56px;
+      top: 16%;
+      left: 6%;
+      animation: avatarBob 4.2s ease-in-out infinite alternate;
+    }
+
+    .cta-avatar-2 {
+      width: 68px;
+      height: 68px;
+      top: 44%;
+      left: 14%;
+      animation: avatarBob 3.8s ease-in-out infinite alternate-reverse;
+    }
+
+    .cta-avatar-3 {
+      width: 48px;
+      height: 48px;
+      top: 74%;
+      left: 7%;
+      animation: avatarBob 4.5s ease-in-out infinite alternate;
+    }
+
+    .cta-avatar-4 {
+      width: 56px;
+      height: 56px;
+      top: 68%;
+      left: 24%;
+      animation: avatarBob 4s ease-in-out infinite alternate-reverse;
+    }
+
+    .cta-avatar-5 {
+      width: 64px;
+      height: 64px;
+      top: 18%;
+      right: 15%;
+      animation: avatarBob 3.9s ease-in-out infinite alternate-reverse;
+    }
+
+    .cta-avatar-6 {
+      width: 50px;
+      height: 50px;
+      top: 30%;
+      right: 6%;
+      animation: avatarBob 4.4s ease-in-out infinite alternate;
+    }
+
+    .cta-avatar-7 {
+      width: 68px;
+      height: 68px;
+      top: 66%;
+      right: 8%;
+      animation: avatarBob 4.1s ease-in-out infinite alternate;
+    }
+
+    .cta-avatar-8 {
+      width: 54px;
+      height: 54px;
+      top: 70%;
+      right: 23%;
+      animation: avatarBob 3.7s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes avatarBob {
+      0% {
+        transform: translateY(0px) scale(1);
+      }
+
+      100% {
+        transform: translateY(-8px) scale(1.04);
+      }
+    }
+
+    /* Gooey Blob Button */
+    .buttons {
+      margin-top: 34px;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .blob-btn {
+      z-index: 1;
+      position: relative;
+      padding: 16px 44px;
+      text-align: center;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      background-color: #ff5a1f !important;
+      outline: none;
+      border: none;
+      transition: color 0.4s ease, background-color 0.4s ease;
+      cursor: pointer;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      box-shadow: none !important;
+    }
+
+    .blob-btn:before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #ff5a1f;
+      border-radius: 9999px;
+      pointer-events: none;
+      transition: border-color 0.35s ease;
+    }
+
+    .blob-btn:after {
+      content: "";
+      z-index: -2;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+    }
+
+    .blob-btn:hover {
+      color: #000000 !important;
+      background-color: #ffffff !important;
+      box-shadow: none !important;
+    }
+
+    .blob-btn:hover:before {
+      border-color: #ffffff;
+    }
+
+    .blob-btn__inner {
+      z-index: -1;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+      background: #ff5a1f;
+    }
+
+    .blob-btn__blobs {
+      position: relative;
+      display: block;
+      height: 100%;
+      filter: url('#goo');
+    }
+
+    .blob-btn__blob {
+      position: absolute;
+      top: 2px;
+      width: 25%;
+      height: 100%;
+      background: #ffffff;
+      border-radius: 100%;
+      transform: translate3d(0, 150%, 0) scale(1.7);
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @supports (filter: url('#goo')) {
+      .blob-btn__blob {
+        transform: translate3d(0, 150%, 0) scale(1.4);
+      }
+    }
+
+    .blob-btn__blob:nth-child(1) {
+      left: 0%;
+      transition-delay: 0s;
+    }
+
+    .blob-btn__blob:nth-child(2) {
+      left: 28%;
+      transition-delay: 0.08s;
+    }
+
+    .blob-btn__blob:nth-child(3) {
+      left: 56%;
+      transition-delay: 0.16s;
+    }
+
+    .blob-btn__blob:nth-child(4) {
+      left: 84%;
+      transition-delay: 0.24s;
+    }
+
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.7);
+    }
+
+    @supports (filter: url('#goo')) {
+      .blob-btn:hover .blob-btn__blob {
+        transform: translateZ(0) scale(1.4);
+      }
+    }
+
+    .blob-btn .btn-arrow-icon {
+      position: relative;
+      z-index: 2;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      color: inherit;
+    }
+
+    .blob-btn:hover .btn-arrow-icon {
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================================
+       GLOBAL RESPONSIVE SYSTEM (MOBILE, TABLET & DESKTOP PERFECTION)
+       ========================================================================== */
+
+    /* TABLET BREAKPOINT (< 992px) */
+    @media (max-width: 991px) {
+      .header-area {
+        padding: 16px 20px;
+      }
+
+      /* Hero Section */
+      .about-hero-breadcrumb-section {
+        min-height: 420px;
+        padding: 160px 20px 90px 20px;
+      }
+
+      .about-card-title {
+        font-size: clamp(2.4rem, 6.5vw, 3.6rem);
+      }
+
+      /* Section 01: Our Story Split Grid */
+      .overview-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .overview-image-frame {
+        min-height: 300px;
+        height: 340px;
+      }
+
+      /* Section 02: Choose Cards */
+      .choose-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      /* Section 03: Values / Our Approach */
+      .about-values-section {
+        height: auto;
+        padding: 85px 0;
+      }
+
+      .values-sticky-container {
+        position: relative;
+        height: auto;
+        min-height: unset;
+        display: block;
+      }
+
+      .values-content-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .values-nav-col {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .values-dots-list {
+        flex-direction: row;
+        padding-left: 0;
+      }
+
+      .value-dot.active {
+        width: 24px;
+        height: 8px;
+      }
+
+      /* Section 04: What Drives Us Split Grid */
+      .about-drives-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .drives-img-wrapper {
+        min-height: 300px;
+        aspect-ratio: 16 / 10;
+      }
+
+      /* Section 05: CTA Card & Avatars */
+      .cta-avatar {
+        display: none !important;
+      }
+
+      .promise-cta-card {
+        padding: 56px 28px;
+      }
+
+      /* Home Page Footer & Newsletter on Tablet */
+      .red-newsletter-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+      }
+
+      .footer-middle-row {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .footer-bottom-row {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+    }
+
+    /* =========================================================
+       MOBILE RESPONSIVE SYSTEM (< 768px)
+       ========================================================= */
+    @media (max-width: 768px) {
+      /* 1. HERO BREADCRUMB */
+      .about-hero-breadcrumb-section {
+        min-height: 280px !important;
+        padding: 110px 16px 44px 16px !important;
+      }
+
+      .about-card-title {
+        font-size: clamp(1.8rem, 6.5vw, 2.3rem) !important;
+        line-height: 1.15 !important;
+        margin-bottom: 12px !important;
+      }
+
+      .about-card-breadcrumb {
+        font-size: 12.5px !important;
+        padding: 5px 14px !important;
+      }
+
+      .about-card-dot {
+        top: 16px !important;
+        left: 16px !important;
+      }
+
+      /* 2. SECTION PADDING */
+      .overview-video-section,
+      .tj-choose-section,
+      .about-drives-section,
+      .about-promise-section {
+        padding: 48px 0 54px 0 !important;
+      }
+
+      /* 3. SECTION HEADINGS & EYEBROWS (PREVENT HORIZONTAL OVERFLOW) */
+      .overview-eyebrow,
+      .sub-title,
+      .drives-sub-title,
+      .about-eyebrow-tag {
+        font-size: 11px !important;
+        letter-spacing: 0.08em !important;
+        margin-bottom: 12px !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        max-width: 100% !important;
+      }
+
+      .overview-title,
+      .sec-title,
+      .drives-title {
+        font-size: clamp(1.55rem, 5.5vw, 2.05rem) !important;
+        line-height: 1.22 !important;
+        margin-bottom: 16px !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+      }
+
+      .about-section-heading {
+        font-size: clamp(1.45rem, 5vw, 1.85rem) !important;
+        line-height: 1.25 !important;
+        margin-bottom: 14px !important;
+        word-break: break-word !important;
+      }
+
+      /* 4. PARAGRAPHS & DESCRIPTIONS */
+      .overview-p,
+      .desc,
+      .drives-desc,
+      .promise-desc-p {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+      }
+
+      .overview-paragraphs-wrap {
+        gap: 12px !important;
+        margin-bottom: 24px !important;
+      }
+
+      /* 5. GRIDS & IMAGES */
+      .overview-split-grid,
+      .about-drives-grid {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+      }
+
+      .overview-image-frame,
+      .drives-img-wrapper {
+        min-height: 220px !important;
+        max-height: 260px !important;
+        height: auto !important;
+        aspect-ratio: 16 / 10 !important;
+        border-radius: 16px !important;
+        width: 100% !important;
+      }
+
+      /* 6. CHOOSE CARDS (IN YOUR SHOES) */
+      .tj-choose-section .sec-heading {
+        margin-bottom: 30px !important;
+      }
+
+      .tj-choose-section .sec-heading-inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+      }
+
+      .choose-cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        width: 100% !important;
+      }
+
+      .choose-box {
+        padding: 24px 18px !important;
+        border-radius: 16px !important;
+      }
+
+      .choose-icon {
+        width: 48px !important;
+        height: 48px !important;
+        margin-bottom: 16px !important;
+      }
+
+      .choose-icon svg {
+        width: 22px !important;
+        height: 22px !important;
+      }
+
+      .choose-content .title {
+        font-size: 17.5px !important;
+        margin-bottom: 8px !important;
+      }
+
+      .choose-content .desc {
+        font-size: 13.5px !important;
+        line-height: 1.55 !important;
+      }
+
+      /* 7. DRIVES CHECKLIST (ONE STEP AT A TIME) */
+      .drives-check-list {
+        gap: 14px !important;
+        margin-bottom: 24px !important;
+      }
+
+      .drives-check-item {
+        gap: 12px !important;
+      }
+
+      .drives-check-badge {
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+      .drives-check-badge svg {
+        width: 13px !important;
+        height: 13px !important;
+      }
+
+      .drives-check-text {
+        font-size: 14.5px !important;
+        line-height: 1.4 !important;
+      }
+
+      /* 8. PROMISE CTA CARD */
+      .promise-cta-card {
+        padding: 34px 16px !important;
+        border-radius: 18px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      .cta-avatar {
+        display: none !important;
+      }
+
+      .promise-signoff-p {
+        font-size: 16px !important;
+        margin-top: 14px !important;
+      }
+
+      /* 9. BUTTONS — AUTO WIDTH, NEVER FULL-WIDTH */
+      .blob-btn,
+      .btn-overview-primary,
+      .tj-primary-btn {
+        width: auto !important;
+        max-width: max-content !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        padding: 12px 24px !important;
+        font-size: 13.5px !important;
+        margin-inline: auto !important;
+      }
+
+      .overview-btn-group,
+      .tj-choose-section .btn-wrap,
+      .buttons {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+      }
+    }
+
+    /* =========================================================
+       EXTRA SMALL PHONES (< 480px)
+       ========================================================= */
+    @media (max-width: 480px) {
+      .about-hero-breadcrumb-section {
+        min-height: 260px !important;
+        padding: 100px 12px 38px 12px !important;
+      }
+
+      .about-card-title {
+        font-size: clamp(1.6rem, 6vw, 2.05rem) !important;
+      }
+
+      .overview-video-section,
+      .tj-choose-section,
+      .about-drives-section,
+      .about-promise-section {
+        padding: 40px 0 46px 0 !important;
+      }
+
+      .overview-title,
+      .sec-title,
+      .drives-title {
+        font-size: clamp(1.4rem, 5vw, 1.8rem) !important;
+      }
+
+      .overview-image-frame,
+      .drives-img-wrapper {
+        min-height: 190px !important;
+        max-height: 230px !important;
+      }
+
+      .choose-box {
+        padding: 20px 14px !important;
+      }
+
+      .promise-cta-card {
+        padding: 28px 12px !important;
+      }
+
+      .red-newsletter-form {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+      }
+
+      .red-newsletter-input {
+        width: 100% !important;
+        border-radius: 8px !important;
+      }
+
+      .red-newsletter-btn {
+        width: auto !important;
+        max-width: max-content !important;
+        padding: 11px 24px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Ambient Dark Gradients -->
+  <div class="sastik-ambient-glow glow-1"></div>
+  <div class="sastik-ambient-glow glow-2"></div>
+  <div class="sastik-ambient-glow glow-3"></div>
+
+  <header class="header-area" id="header">
+    <div class="header-area-inner">
+      <div class="brand-area-wrap">
+        <a href="index.html" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="images/logo.png" alt="Conquer Logo" style="height: 52px; width: auto; display: block;">
+        </a>
+      </div>
+
+      <nav class="nav-area">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Conquer</a>
+        <a href="products.html">Products &amp; Services</a>
+        <a href="approach.html" class="active">Our Approach</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-area-actions">
+        <a href="contact.html" class="btn-area-orange">
+          <span>Let's talk</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <button class="btn-area-menu" id="mobile-toggle-btn" aria-label="Toggle menu">
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Conquer</a>
+      <a href="products.html" class="mobile-nav-link">Products &amp; Services</a>
+      <a href="approach.html" class="mobile-nav-link active">Our Approach</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div style="margin-top: 15px;">
+        <a href="contact.html" class="btn-area-orange"
+          style="justify-content: center; width: 100%; border-radius: 9999px;">
+          <span>Let's talk</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========================================================================
+         HERO: OUR APPROACH
+         ======================================================================== -->
+    <section class="about-hero-breadcrumb-section">
+      <span class="about-card-dot" aria-hidden="true"></span>
+      <div class="about-card-grid" aria-hidden="true"></div>
+      <div class="about-card-glow glow-top-left" aria-hidden="true"></div>
+      <div class="about-card-glow glow-bottom-right" aria-hidden="true"></div>
+
+      <div class="about-hero-band-inner">
+        <h1 class="about-card-title">
+          Our <span class="title-gradient-orange">Approach</span>
+        </h1>
+        <nav class="about-card-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" class="crumb-link">Home</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current">Our Approach</span>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         01 — RESEARCH & DEVELOPMENT (SPLIT IMAGE & CONTENT)
+         ======================================================================== -->
+    <section class="overview-video-section" id="research">
+      <div class="container">
+        <div class="overview-split-grid">
+
+          <div class="overview-image-frame">
+            <img src="images/Aboutus-02.jpg" alt="Research and Development at Conquer" class="overview-simple-img"
+              loading="lazy">
+          </div>
+
+          <div class="overview-content-wrap">
+            <span class="overview-eyebrow tj-fade-anim">[ RESEARCH &amp; DEVELOPMENT ]</span>
+            <h2 class="overview-title">Our Approach To Innovation, Research &amp; Development.</h2>
+
+            <div class="overview-paragraphs-wrap">
+              <p class="overview-p">
+                We invest heavily on Research &amp; Development because we know how important it is for someone to
+                do the trialing and error.
+              </p>
+              <p class="overview-p">
+                We put our conclusions to the test, subject to scrutiny and pass a strict viability and verification
+                process.
+              </p>
+            </div>
+
+            <div class="overview-btn-group">
+              <a href="products.html" class="blob-btn">
+                <span>See What We've Built</span>
+                <span class="btn-arrow-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         02 — IN YOUR SHOES (WHY CONQUER STYLE, 3 CARDS)
+         ======================================================================== -->
+    <section class="tj-choose-section fix section-gap" id="in-your-shoes">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec-heading">
+              <span class="sub-title tj-fade-anim">[ WE PUT OURSELVES IN YOUR SHOES ]</span>
+              <div class="sec-heading-inner">
+                <h2 class="sec-title tj-split-text-1">
+                  We Put Ourselves<br>In Your Shoes.
+                </h2>
+                <div class="desc-wrap tj-fade-anim">
+                  <p class="desc">
+                    We imagine and try to understand community unique needs, preferences and tastes. We pay attention
+                    to market trends and are determined to giving communities the tools they need to improve their
+                    lives.
+                  </p>
+                </div>
+                <div class="btn-wrap choose-desktop-btn tj-fade-anim">
+                  <a class="blob-btn" href="products.html">
+                    <span>Learn More</span>
+                    <span class="btn-arrow-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </span>
+                    <span class="blob-btn__inner">
+                      <span class="blob-btn__blobs">
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="choose-cards-grid">
+          <!-- Card 1 -->
+          <div class="choose-box tj-fade-anim">
+            <div class="choose-inner">
+              <div class="choose-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="choose-content">
+                <h4 class="title">Community Needs</h4>
+                <p class="desc">We imagine and understand each community's unique needs before we design a single
+                  solution.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="choose-box tj-fade-anim">
+            <div class="choose-inner">
+              <div class="choose-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="choose-content">
+                <h4 class="title">Preferences &amp; Tastes</h4>
+                <p class="desc">Every community is different — we pay close attention to preferences and tastes, not
+                  one-size-fits-all thinking.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="choose-box tj-fade-anim">
+            <div class="choose-inner">
+              <div class="choose-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div class="choose-content">
+                <h4 class="title">Market Trends</h4>
+                <p class="desc">We track where things are heading, determined to give communities the tools they need
+                  to improve their lives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="choose-mobile-btn">
+          <a class="blob-btn" href="products.html">
+            <span>Learn More</span>
+            <span class="btn-arrow-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+            <span class="blob-btn__inner">
+              <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         03 — ONE STEP AT A TIME (SPLIT CONTENT & IMAGE WITH CHECKLIST)
+         ======================================================================== -->
+    <section class="about-drives-section" id="one-step">
+      <div class="container">
+        <div class="about-drives-grid">
+
+          <div class="drives-content-col">
+            <span class="drives-sub-title tj-fade-anim">[ ONE STEP AT A TIME ]</span>
+            <h2 class="drives-title tj-split-text-1">
+              One Step<br>At A Time.
+            </h2>
+            <p class="drives-desc tj-fade-anim">
+              We go back to the drawing board, undertake surveys, challenge established conventions and try to
+              conquer them with alternative workable solutions - that are practical and cost effective.
+            </p>
+
+            <ul class="drives-check-list tj-fade-anim">
+              <li class="drives-check-item">
+                <span class="drives-check-badge">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="drives-check-text">Undertake surveys.</span>
+              </li>
+
+              <li class="drives-check-item">
+                <span class="drives-check-badge">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="drives-check-text">Challenge established conventions.</span>
+              </li>
+
+              <li class="drives-check-item">
+                <span class="drives-check-badge">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="drives-check-text">Build practical, cost-effective solutions.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="drives-img-col tj-fade-anim">
+            <div class="drives-img-wrapper">
+              <img src="images/sketching-plan.jpg" alt="One Step At A Time - Conquer Approach" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         04 — CTA (PROMISE-STYLE CARD)
+         ======================================================================== -->
+    <section class="about-section about-promise-section" id="promise">
+      <div class="container">
+        <div class="promise-cta-card">
+
+          <div class="cta-avatar cta-avatar-1" aria-hidden="true">
+            <img src="images/people.jpg" alt="Collaborator" style="object-position: 15% 20%;">
+          </div>
+          <div class="cta-avatar cta-avatar-2" aria-hidden="true">
+            <img src="images/sketching-plan.jpg" alt="Collaborator" style="object-position: 50% 30%;">
+          </div>
+          <div class="cta-avatar cta-avatar-3" aria-hidden="true">
+            <img src="images/Aboutus-01.jpg" alt="Collaborator" style="object-position: 40% 40%;">
+          </div>
+          <div class="cta-avatar cta-avatar-4" aria-hidden="true">
+            <img src="images/Aboutus-02.jpg" alt="Collaborator" style="object-position: 60% 40%;">
+          </div>
+          <div class="cta-avatar cta-avatar-5" aria-hidden="true">
+            <img src="images/Aboutus-02.jpg" alt="Collaborator" style="object-position: 20% 50%;">
+          </div>
+          <div class="cta-avatar cta-avatar-6" aria-hidden="true">
+            <img src="images/people.jpg" alt="Collaborator" style="object-position: 70% 30%;">
+          </div>
+          <div class="cta-avatar cta-avatar-7" aria-hidden="true">
+            <img src="images/sketching-plan.jpg" alt="Collaborator" style="object-position: 80% 60%;">
+          </div>
+          <div class="cta-avatar cta-avatar-8" aria-hidden="true">
+            <img src="images/Aboutus-01.jpg" alt="Collaborator" style="object-position: 30% 60%;">
+          </div>
+
+          <div class="promise-card-content">
+            <div class="about-eyebrow-tag">[ OUR APPROACH ]</div>
+            <h2 class="about-section-heading">WE CONQUER, ONE STEP AT A TIME</h2>
+            <p class="promise-desc-p">
+              Research, testing and improvement never stop. If you'd like to know more about how we build, or share
+              a common goal with us, we'd love to hear from you.
+            </p>
+
+            <div class="buttons">
+              <a href="contact.html" class="blob-btn">
+                <span>TALK TO CONQUER</span>
+                <span class="btn-arrow-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Global SVG Gooey Filter for Blob Button Animation -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+      style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+          <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+
+  </main>
+
+  <!-- =========================================================
+       SIGNATURE RED GRADIENT NEWSLETTER STRIP
+  ========================================================= -->
+  <section class="red-newsletter-strip" id="contact">
+    <div class="container red-newsletter-inner">
+      <div class="red-newsletter-title">
+        Sign up for email updates
+      </div>
+      <form class="red-newsletter-form"
+        onsubmit="event.preventDefault(); alert('Thank you for subscribing to CONQUER email updates!');">
+        <input type="email" class="red-newsletter-input" placeholder="Enter your email" required>
+        <button type="submit" class="red-newsletter-btn">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-logo-wrap">
+        <a href="#top" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="images/logo.png" alt="Conquer Solutions" class="footer-logo-img"
+            style="width: auto; display: block;">
+        </a>
+        <div class="footer-logo-sub" style="margin-top: 12px;">
+          RESEARCH • PROGRESS • HOPE • INNOVATION STUDIO
+        </div>
+      </div>
+
+      <!-- Horizontal Menu Links & Real SVG Social Icons Row -->
+      <div class="footer-middle-row">
+
+        <div class="footer-nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Conquer</a>
+          <a href="products.html">Products &amp; Services</a>
+          <a href="approach.html">Our Approach</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- REAL HIGH-RESOLUTION SVG SOCIAL MEDIA ICONS -->
+        <div class="footer-social-icons">
+
+          <!-- Facebook SVG -->
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-icon" title="Facebook"
+            aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+
+          <!-- Instagram SVG -->
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-icon" title="Instagram"
+            aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn SVG -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-icon" title="LinkedIn"
+            aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.239-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal Links -->
+      <div class="footer-bottom-row">
+        <div>CONQUER. All rights reserved.</div>
+
+        <div class="footer-legal-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Your Privacy Choices</a>
+          <a href="#top" class="footer-back-to-top-link"
+            onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+            <span>Back to top</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
