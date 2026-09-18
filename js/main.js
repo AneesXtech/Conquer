@@ -228,4 +228,83 @@
       });
     })();
 
+    // 7. Global Scroll Progress Indicator
+    (function initScrollProgress() {
+      if (typeof window === 'undefined') return;
+      const progressBar = document.createElement('div');
+      progressBar.className = 'scroll-progress-bar';
+      progressBar.setAttribute('aria-hidden', 'true');
+
+      const attachBar = () => {
+        if (!document.body.contains(progressBar)) document.body.prepend(progressBar);
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', attachBar);
+      } else {
+        attachBar();
+      }
+
+      function updateProgress() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+        progressBar.style.width = progress + '%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    })();
+
+    // 8. Global Scroll Reveal Observer (IntersectionObserver)
+    (function initScrollReveal() {
+      if (typeof window === 'undefined') return;
+
+      const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const revealObserver = new IntersectionObserver(revealCallback, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      function observeElements() {
+        const targets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        targets.forEach(el => revealObserver.observe(el));
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', observeElements);
+      } else {
+        observeElements();
+      }
+    })();
+
+    // 9. Subtle Scroll Parallax on Featured Images
+    (function initScrollParallax() {
+      if (typeof window === 'undefined') return;
+
+      function updateParallax() {
+        const parallaxImgs = document.querySelectorAll('.parallax-image, .intro-image-frame img, .rd-image-frame img');
+        if (!parallaxImgs.length) return;
+
+        const windowHeight = window.innerHeight;
+        parallaxImgs.forEach(img => {
+          const rect = img.parentElement ? img.parentElement.getBoundingClientRect() : img.getBoundingClientRect();
+          if (rect.bottom > 0 && rect.top < windowHeight) {
+            const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+            const movement = (progress - 0.5) * 32;
+            img.style.transform = `translate3d(0, ${movement}px, 0)`;
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateParallax, { passive: true });
+      window.addEventListener('resize', updateParallax, { passive: true });
+    })();
+
 
